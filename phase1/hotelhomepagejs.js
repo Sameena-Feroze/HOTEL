@@ -1,65 +1,63 @@
-function validName(tagN) {
+function validName(t1) {
 
     let ph = /^[A-za-z]*$/g;
-    let p = document.getElementById(tagN).value;
+    let p = document.getElementById(t1).value;
     console.log(p);
     let result = ph.test(p);
     console.log(result);
-    document.getElementById(tagN).classList.remove('invalid');
+    document.getElementById(t1).classList.remove('notValid');
     if(!result){
-      document.getElementById(tagN).classList.add('invalid');
+      document.getElementById(t1).classList.add('notValid');
     }
   
   }
 
-  function validemail(tagN) {
 
-    let ph = /^[A-za-z]+[0-9]+@+gmail|yahoo+.+com*$/g;
-    let p = document.getElementById(tagN).value;
+  function validemail(t1) {
+
+    let ph = /^[A-za-z]+[0-9]+@+(gmail|yahoo)+.+[(com|in)]*$/g;
+    let p = document.getElementById(t1).value;
     console.log(p);
     let result = ph.test(p);
     console.log(result);
-    document.getElementById(tagN).classList.remove('invalid');
+    document.getElementById(t1).classList.remove('notValid');
     if(!result){
-      document.getElementById(tagN).classList.add('invalid');
+      document.getElementById(t1).classList.add('notValid');
     }
   
   }
   
 
-
-  
-  
-  function validPhn(tagN) {
+  function validPhn(t1) {
   
     let ph = /^[0-9]{10}$/g;
-    let p = document.getElementById(tagN).value;
+    let p = document.getElementById(t1).value;
     let result = ph.test(p);
     console.log(result);
-    document.getElementById(tagN).classList.remove('invalid');
+    document.getElementById(t1).classList.remove('invalid');
     if(!result)
-      document.getElementById(tagN).classList.add('invalid');
+      document.getElementById(t1).classList.add('invalid');
   
   }
   
-  function validNum(tagN) {
+  function validNum(t1) {
   
     let ph = /[^0-9]/g;
-    let p = document.getElementById(tagN).value;
+    let p = document.getElementById(t1).value;
     let result = p.match(ph);
-    document.getElementById(tagN).classList.remove('invalid');
+    document.getElementById(t1).classList.remove('invalid');
     if(result != null){
-      document.getElementById(tagN).classList.add('invalid');
+      document.getElementById(t1).classList.add('invalid');
     }
   
   }
   
-  function isNull(tagN) {
+  function isNull(t1) {
   
-    let p = document.getElementById(tagN).value;
-    document.getElementById(tagN).classList.remove('invalid');
+    let p = document.getElementById(t1).value;
+    document.getElementById(t1).classList.remove('invalid');
     if(p==""){
-    document.getElementById(tagN).classList.add('invalid');
+    document.getElementById(t1).classList.add('invalid');
     }
   
   }

@@ -5,15 +5,17 @@
 </head>
 <body>
    
-    <div class="main"   text-align=center><h1> A2Z HOTELS</h1></div>
+    <div class="main" style="text-align:center">
+        <h1> A2Z HOTELS</h1>
+    </div>
     <h2>BOOK YOUR ROOM</h2>
-<div text-align=center class="user">
-    <h3>ADD CUSTOMER DETAILS</h3>
+    <div class="user">
+        <h3>ADD CUSTOMER DETAILS</h3>
     <form>
         <input type="text" name="name"  id="uName" onfocusout="validName('uName');" placeholder="enter your name" required><br><br>
         <input type="number" name="number"  id="pName" onfocusout="validPhn('(uph');" placeholder="enter your phone number" required><br><br>
-        <input type="email" name="email" id="uemail" onfocusout="validemail(uemail);" placeholder="entet tour mailid" required><br><br>
-        <input type="number" name="advance" id="advance" onfocusout="validNum(advance);" placeholder="enter the advance amount" required><br><br>
+        <input type="email" name="email" id="uemail" onfocusout="validemail('uemail');" placeholder="entet tour mailid" required><br><br>
+        <input type="number" name="advance" id="advance" onfocusout="validNum('advance');" placeholder="enter the advance amount" required><br><br>
     </form>
 </div>
 <div class="room">
@@ -32,8 +34,8 @@
         <label for="ballRoom">ballRoom</label><br><br>
     </form>
     <div class="roomnum">
-        <label for="roomnumber">Room Number</label>
-        <select name="one" id="one">
+        <label for="roomnumber">Room Number :</label>
+        <select name="one" id="one" style="margin-left: 9px;">
     <option value="one" >101</option>
     <option value="one" >102</option>
     <option value="one" >201</option>
@@ -42,11 +44,11 @@
     </div><br><br>
     <div class="dates">
         <form>
-            <label for="startdate">startdate</label>
-            <input type="date" name="startdate" id="startdate" placeholder="enter the start date"><br><br>
-            <label for="startdate">enddate</label>
-            <input type="date" name="startdate" id="startdate" placeholder="enter the start date"><br><br>
-            <label for="number">total no:of days</label>
+            <label for="startdate">startdate :</label>
+            <input type="date" name="startdate" style="margin-left: 48px;padding-right: 25px;" id="startdate" placeholder="enter the start date"><br><br>
+            <label for="startdate">enddate :</label>
+            <input type="date" name="startdate" style="margin-left: 51px;padding-right: 25px;" id="startdate" placeholder="enter the start date"><br><br>
+            <label for="number">total no of days :</label>
             <input type="number" name="daysno" id="daysno" placeholder="enter the no:of days">
         </form>
 

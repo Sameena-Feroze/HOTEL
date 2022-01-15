@@ -1,15 +1,22 @@
 .user{
-    
-    margin-top: 200px
+    text-align: center;
+    color: rgb(rgb(0, 0, 0));
+    margin-top: 200px;
 }
 .room{
     position: absolute;
     top: 200px;
     left: 10px;
+    color: rgb(255, 255, 255);
 }
 body{
-    border-style: hidden;
-    background-image: url(../hotelimage.jpg);
+    
+    background-image: url(hotelimage.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
+}
+
+.notValid{
+    border-style: solid;
+    border-color: rgb(255, 0, 0);
 }
